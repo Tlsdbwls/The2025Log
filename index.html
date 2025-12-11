@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2025 Log Main</title>
+    
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            background-color: #333333; 
+        }
+        header {
+            background-color: #333333;
+            color: aliceblue;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: default;
+            flex-shrink: 0;
+        }
+
+        .logo a {
+            color: aliceblue; 
+            text-decoration: none !important;
+            cursor: pointer; 
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .logo a:hover {
+            color: #ffd700;
+        }
+
+        .main-nav {
+            flex-shrink: 1; 
+            min-width: 0;
+        }
+
+        .main-nav a {
+            font-size: 16px;
+            margin-left: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .main-nav a:hover {
+            color: #ffd700;
+        }
+
+        .main-nav a.active {
+            color: #00bfff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: #333333;
+            flex-grow: 1;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        footer {
+            background-color: #333333;
+            color: #747474;
+            text-align: center;
+            padding: 10px 0;
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 15px;
+                flex-wrap: nowrap; 
+            }
+            
+            .logo a {
+                font-size: 20px; 
+            }
+
+            .main-nav a {
+                margin-left: 8px; 
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+             .logo a {
+                font-size: 18px;
+            }
+            .main-nav a {
+                margin-left: 5px; 
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">The 2025 Log</a>
+        </div>
+        <nav class="main-nav">
+            <a href="12archive.html">12Archive</a> 
+            <a href="soundtrack.html">Soundtrack</a>
+            <a href="project.html">Project</a>
+            <a href="cinemalog.html">Cinemalog</a>
+            <a href="yuzineda.html">yuzineda</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <video src="fi.mp4" autoplay loop muted playsinline></video>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2025 yuzineda. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2025 Log - Cinemalog</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #333333;
+        }
+
+        header {
+            background-color: #333333;
+            color: aliceblue;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            color: aliceblue; 
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .logo a:hover { color: #ffd700; }
+        
+        .main-nav a {
+            font-size: 16px;
+            margin-left: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .main-nav a:hover { color: #ffd700; }
+        .main-nav a.active { color: #00bfff; font-weight: bold; text-decoration: underline; }
+
+        main {
+            background-color: #333333;
+            flex-grow: 1;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+        }
+
+        .main-title {
+            color: #ffffff;
+            font-size: 30px;
+            margin-bottom: 40px;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #5c5c5c;
+            width: 80%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .cinemalog-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px; 
+            width: 100%;
+        }
+        
+        .movie-card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            overflow: hidden; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .movie-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .poster-area {
+            width: 100%;
+            padding-top: 133%; 
+            position: relative;
+            background-color: #ffffff;
+        }
+        
+        .poster-area img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .movie-title {
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            padding: 5px 0 5px 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+
+        .info-area {
+            background-color: #fbfbfb;
+            padding: 15px 10px;
+            color: #333333;
+            font-size: 14px;
+            min-height: 50px; 
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #333333; 
+            color: #747474;
+            text-align: center;
+            padding: 10px 0;
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 850px) {
+            .cinemalog-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .main-title {
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+
+            .main-nav a {
+                margin-left: 10px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cinemalog-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            header {
+                padding: 10px 15px;
+            }
+            
+            .main-nav {
+                display: none;
+            }
+
+            .main-title {
+                font-size: 22px;
+                margin-bottom: 25px;
+            }
+            
+            .info-area {
+                font-size: 13px;
+                padding: 12px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">The 2025 Log</a>
+        </div>
+        <nav class="main-nav">
+            <a href="12archive.html">12Archive</a> 
+            <a href="soundtrack.html">Soundtrack</a>
+            <a href="project.html">Project</a>
+            <a href="#" class="active">Cinemalog</a>
+            <a href="yuzineda.html">yuzineda</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="main-title">CinemaLog</h2> 
+
+        <div class="cinemalog-grid">
+            
+            <div class="movie-card">
+                <div class="poster-area">
+                    <img src="hp.png" alt="해피엔드 포스터">
+                    <div class="movie-title">해피엔드</div>
+                </div>
+                <div class="info-area">
+                    <p>평점: ⭐⭐⭐⭐ <br><br> 이유 : 연출 방법이 되게 예술작품 보는 듯한 느낌이 들었당. OST가 엄청 웅장해서 계속 기억에 남았고 풋풋한 주인공들을 응원하게됨</p>
+                </div>
+            </div>
+            
+            <div class="movie-card">
+                <div class="poster-area">
+                    <img src="rz.png" alt="체인소맨 레제편 포스터">
+                    <div class="movie-title">체인소맨 레제편</div>
+                </div>
+                <div class="info-area">
+                    <p>평점: ⭐⭐⭐⭐⭐ <br><br> 이유 : 영화 내내 지루한 부분없이 알찼고 레제가 너무 예쁘다 목소리도 넘 조음</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster-area">
+                    <img src="no.png" alt="노이즈 포스터">
+                    <div class="movie-title">노이즈</div>
+                </div>
+                <div class="info-area">
+                    <p>평점: ⭐⭐⭐ <br><br> 이유 : 반전은 재밌었지만 예상했던거랑은 다르게 그냥 단순히 놀래키고 싶어서 만든 영화같다는 생각이 들었당...기대가 넘 컸던 것 같다ㅠㅠ</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster-area">
+                    <img src="mu.png" alt="귀멸의 칼날 무한성편 포스터">
+                    <div class="movie-title">귀멸의 칼날 무한성편</div>
+                </div>
+                <div class="info-area">
+                    <p>평점: ⭐⭐⭐⭐⭐ <br><br>이유 : 전투씬에서 숨참으면서 봤다 하필 주요인물 과거 회상장면에 화장실 갔다와서 친구 우는동안 화장실간거 후회하고 있었다..</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+       Copyright © 2025 yuzineda. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

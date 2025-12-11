@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2025 Log - yuzineda</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #333333; 
+        }
+
+        header {
+            background-color: #333333;
+            color: aliceblue;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            color: aliceblue; 
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .main-nav a {
+            font-size: 16px;
+            margin-left: 15px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .main-nav a:hover { color: #ffd700; }
+        .main-nav a.active { color: #00bfff; font-weight: bold; text-decoration: underline; }
+
+        main {
+            background-color: #333333;
+            flex-grow: 1;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        .page-title {
+            color: #ffffff;
+            font-size: 30px;
+            margin-bottom: 40px;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #5c5c5c;
+            width: 80%; 
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        .profile-container {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            gap: 30px;
+            background-color: #333333;
+        }
+        
+        .left-area {
+            flex: 1; 
+            min-width: 300px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 100%;
+            padding-top: 100%; 
+            background-color: #ffffff; 
+            border-radius: 15px; 
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .profile-photo img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .main-heading {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .main-subtitle {
+            color: #aaaaaa;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .right-area {
+            flex: 2; 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .info-card {
+            background-color: #4f4f4f; 
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+        .info-card h3 {
+            font-size: 20px;
+            color: #00bfff; 
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 5px;
+        }
+        .info-card p, .info-card ul {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0 0 10px 0;
+        }
+        .info-card ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+        
+        .tag-list {
+            margin-top: 10px;
+        }
+        .skill-tag {
+            display: inline-block;
+            background-color: #666;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+
+        footer {
+            background-color: #333333;
+            color: #747474;
+            text-align: center;
+            padding: 10px 0;
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .left-area, .right-area {
+                width: 100%;
+                max-width: none;
+            }
+            .main-heading {
+                margin-top: 20px;
+            }
+            .profile-photo {
+                width: 70%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">The 2025 Log</a>
+        </div>
+        <nav class="main-nav">
+            <a href="12archive.html">12Archive</a> 
+            <a href="soundtrack.html">Soundtrack</a>
+            <a href="project.html">Project</a>
+            <a href="cinemalog.html">Cinemalog</a>
+            <a href="#" class="active">yuzineda</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">yuzineda</h2> 
+
+        <div class="profile-container">
+            <div class="left-area">
+                <h1 class="main-heading">신유진</h1>
+                <p class="main-subtitle">물병자리 | INTP | Korean</p>
+                
+                <div class="profile-photo"><img src="me.jpg" alt="">
+                    </div>
+            </div>
+
+            <div class="right-area">
+                
+                <div class="info-card">
+                    <h3>2025년 후기</h3>
+                    <p>
+                        이 사이트의 컨셉을 위해 2025년을 뒤돌아 보면서 생각보다 새로운 경험을 많이 겪었다는 것과 잠깐 잊고있었던 다양한 추억들이 많다는걸 깨달았습니다.
+                        학교에선 다양한 기술과 지식, 새로운 환경을 혼자 적응하면서 많은 것을 배울 수 있었던 뜻깊은 2025년 이었던 것 같습니다.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Skills / Tools</h3>
+                    <div class="tag-list">
+                        <span class="skill-tag">Visual Studio Code</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Premiere Pro</span>
+                        <span class="skill-tag">After Effects</span>
+                        <span class="skill-tag">Illustrator</span>
+                        <span class="skill-tag">Potoshop</span>
+                        <span class="skill-tag">Blender</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Experience / Education</h3>
+                    <ul>
+                        <li>계원예술대학교 디지털미디어디자인과 재학중</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2025 yuzineda. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
